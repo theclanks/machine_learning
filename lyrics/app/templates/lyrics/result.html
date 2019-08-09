@@ -1,0 +1,23 @@
+{% extends "bootstrap/base.html" %}
+{% block title %}Qual é o gênero?{% endblock %}
+
+{% block navbar %}
+<div class="navbar navbar-fixed-top">
+  <!-- ... -->
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+  <h1>Qual é o gênero?</h1>
+    <legend>A música é {{ form.resp }}</legend>
+    <span>Probalidades:</span>
+    <pre>Bossa Nova: {{ form.prob[0] }}</pre>
+    <pre>Funk: {{ form.prob[1] }}</pre>
+    <pre>Gospel: {{ form.prob[2] }}</pre>
+    <pre>Sertanejo: {{ form.prob[3] }}</pre>
+</div>
+{% endblock %}
+
+
